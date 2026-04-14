@@ -6,6 +6,3 @@ class Solution:
                     return [i ,j]
 
             
-s1 = Solution()
-s1.Twosum([2, 7, 11, 15], 9)
-

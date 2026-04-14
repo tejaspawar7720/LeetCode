@@ -1,5 +1,5 @@
 class Solution:
-    def roman_to_int(self,romanstring):
+    def romanToInt(self, s):
         roman = {
             'I' : 1,
             'V' : 5,
@@ -12,11 +12,11 @@ class Solution:
 
         result = 0
 
-        for i in range(len(romanstring)):
-            current = roman[romanstring[i]]
+        for i in range(len(s)):
+            current = roman[s[i]]
 
-            if i+1 < len(romanstring):
-                next_val = roman[romanstring[i+1]]
+            if i+1 < len(s):
+                next_val = roman[s[i+1]]
 
                 if current < next_val:
                     result -= current
@@ -28,8 +28,5 @@ class Solution:
                 result += current
 
         return result
-
-rm=Solution()
-print(rm.roman_to_int("LVIII"))
 
             

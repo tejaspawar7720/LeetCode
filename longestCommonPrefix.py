@@ -5,6 +5,3 @@ class Solution:
             while not word.startswith(prefix):
                 prefix = prefix[:-1]
         return prefix
-
-sl = Solution()
-print(sl.longestCommonPrefix(["dog ","racecar","car"]))                 

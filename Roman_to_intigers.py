@@ -29,4 +29,6 @@ class Solution:
 
         return result
 
-            
+s1 = Solution()
+print(s1.romanToInt("VI")
+)

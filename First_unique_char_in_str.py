@@ -1,11 +1,13 @@
-class Solution(object):
+class Solution():
     def firstUniqChar(self, s):
-        count = {}
+        dics = {}
         for char in s:
-            count[char] = count.get(char, 0) + 1
+            dics[char] = dics.get(char, 0) + 1
 
         for i in range(len(s)):
-            if count[s[i]] == 1:
+            if dics[s[i]] == 1:
                 return i
 
-        return -1
+        return "No uniqe ccharacter"
+sl= Solution()
+print(sl.firstUniqChar("lleettccoodde"))
